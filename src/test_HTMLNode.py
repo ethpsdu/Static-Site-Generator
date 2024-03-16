@@ -1,6 +1,7 @@
 import unittest
 
 from HTMLNode import HTMLNode
+from HTMLNode import LeafNode
 
 
 class TestHTMLNode(unittest.TestCase):
@@ -12,6 +13,9 @@ class TestHTMLNode(unittest.TestCase):
         print("efdsfdsf")
         print(HTMLNode.props_to_html(node2))
 
+        node1 = LeafNode("p","ablrjpjmasmd",None, None)
+
+        print(LeafNode.to_html(node1))
 
 if __name__ == "__main__":
     unittest.main()
