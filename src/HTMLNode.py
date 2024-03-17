@@ -14,7 +14,7 @@ class HTMLNode():
     # return props in html format
     def props_to_html(self):
             return f"href={self.props["href"]} target={self.props["target"]}"
-
+    
 class LeafNode(HTMLNode):
     def __init__(self, tag=None, value=None,children=None, props=None):
         super().__init__(tag, value, None, props)
